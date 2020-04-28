@@ -26,11 +26,6 @@ ul > li > a:hover {
     color:var(--primary-color);
 } 
 
-body > header > nav > div > button > span{
-    background-color: white !important;
-    color: black !important
-}
-
 
 #hero {
     background-image: url("../img/banner.jpg");
