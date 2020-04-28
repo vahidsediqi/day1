@@ -40,6 +40,14 @@ body > header > nav > div > button > span{
     background-size: cover;
 }
 
+#aboutHero{
+    background-image: url("../img/about.jpg");
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #services {
     background-color: #ededed;
     pad: 15px;
