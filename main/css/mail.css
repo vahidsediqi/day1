@@ -1,0 +1,74 @@
+
+
+:root {
+    --primary-color: #169BB0;
+  } 
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+span{
+    color:var(--primary-color);
+}
+
+.navbar-brand{
+    color:var(--primary-color);
+}
+ul > li > a {
+    color: white !important;
+}
+
+ul > li > a:hover {
+    color:var(--primary-color);
+} 
+
+body > header > nav > div > button > span{
+    background-color: white !important;
+    color: black !important
+}
+
+
+#hero {
+    background-image: url("../img/banner.jpg");
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#services {
+    background-color: #ededed;
+    pad: 15px;
+}
+.service-img {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   border: var(--primary-color) 2px solid;
+}
+
+.serive-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: gray;
+    top: 0;
+    opacity: 0.8;
+    padding-left: 15px;
+    display: none;
+}
+
+.serive-overlay:hover{
+ display: block;
+}
+
+
+.carousel-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
