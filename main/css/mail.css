@@ -57,20 +57,20 @@ ul > li > a:hover {
 }
 
 .serive-item{
-    border: 1px solid var(--primary-color);
+    /* border: 1px solid var(--primary-color); */
     padding: 15px;
-    border-top-left-radius: 50%;
+    /* border-top-left-radius: 50%; */
     background-color: white;
     transition: ease-in-out .5s ;
 
 } 
 
-.serive-item:hover{
+/* .serive-item:hover{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 50%;
 
-} 
+}  */
 
 #testimonial{
     background-image: url('../img/test.jpg');
