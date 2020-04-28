@@ -72,6 +72,14 @@ ul > li > a:hover {
 
 } 
 
+#testimonial{
+    background-image: url('../img/test.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 35px;
+}
+
 @media(max-width: 990px){
     /* .serive-item::after{
         width: auto;
