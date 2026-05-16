@@ -1,27 +1,30 @@
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import StarField from './components/StarField'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import TrustBar from './components/TrustBar'
-import Services from './components/Services'
-import Results from './components/Results'
-import Process from './components/Process'
-import About from './components/About'
-import Testimonials from './components/Testimonials'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
+import HomePage from './pages/HomePage'
+import SEOPage from './pages/SEOPage'
+import GoogleAdsPage from './pages/GoogleAdsPage'
+import GoogleMerchantPage from './pages/GoogleMerchantPage'
+import ShopifyPage from './pages/ShopifyPage'
 
 export default function App() {
   return (
-    <div style={{ background: '#05050a', minHeight: '100vh', overflowX: 'hidden' }}>
-      <Navbar />
-      <Hero />
-      <TrustBar />
-      <Services />
-      <Results />
-      <Process />
-      <About />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <HashRouter>
+      <div style={{ background: '#05050a', minHeight: '100vh', overflowX: 'hidden', position: 'relative' }}>
+        <StarField />
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services/seo" element={<SEOPage />} />
+            <Route path="/services/google-ads" element={<GoogleAdsPage />} />
+            <Route path="/services/google-merchant" element={<GoogleMerchantPage />} />
+            <Route path="/services/shopify" element={<ShopifyPage />} />
+          </Routes>
+          <Footer />
+        </div>
+      </div>
+    </HashRouter>
   )
 }
